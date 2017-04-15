@@ -11,6 +11,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
     private View mWaveDemo;
     private View mXfermode;
+    private View mCircleDemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,9 @@ public class MainActivity extends Activity implements OnClickListener {
 
         mXfermode = findViewById(R.id.xfermode_demo);
         mXfermode.setOnClickListener(this);
+
+        mCircleDemo = findViewById(R.id.xfermode_demo);
+        mCircleDemo.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +39,9 @@ public class MainActivity extends Activity implements OnClickListener {
             startActivity(intent);
         } else if (v == mXfermode) {
             Intent intent = new Intent(this, PorterDuffXfermodeActivity.class);
+            startActivity(intent);
+        } else if (v == mCircleDemo) {
+            Intent intent = new Intent(this, CirCleActivity.class);
             startActivity(intent);
         }
     }

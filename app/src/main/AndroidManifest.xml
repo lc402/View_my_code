@@ -21,6 +21,9 @@
         <activity
             android:name=".PorterDuffXfermodeActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".CirCleActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
